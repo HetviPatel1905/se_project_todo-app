@@ -1,17 +1,21 @@
-# Simple Todo App
+# To Do App
 
-Give a brief description of the project here. Feel free to give it a different name.
+## Description
 
-## Functionality
+A to-do app helps you organize tasks, set deadlines, and stay on top of your day. You can create lists, set reminders, and prioritize what matters.
 
-Give a more detailed explanation of the project and its functionality.
+## Tech STack
 
-## Technology
+- HTML = Div, buttons, input fields, images, BEM methodology
+- CSS = Flexbox, Grid, Responsive Design (Media queries)
+- JavaScript = Add Tasks, Mark Tasks as Completed, Delete Tasks, Edit Tasks, Filter Tasks
 
-Give a description of the technologies and techniques used. Pictures, GIFs, or screenshots that detail the project features are recommended.
+## images
+
+- link for images = ![Alt text](./images/)
 
 ## Deployment
 
 This project is deployed on GitHub Pages:
 
-- ADD LINK HERE
+- [link]https://github.com/HetviPatel1905/se_project_todo-app
