@@ -15,8 +15,6 @@ class Popup {
   }
 
   setEventListener() {
-    this._popupCloseBtn.addEventListener("click", () => this.close());
-
     this._popupElement.addEventListener("mousedown", (evt) => {
       if (
         evt.target.classList.contains("popup__close") ||
@@ -27,11 +25,11 @@ class Popup {
     });
   }
 
-  _handleEscapeClose(evt) {
+  _handleEscapeClose = (evt) => {
     if (evt.key === "Escape") {
       this.close();
     }
-  }
+  };
 }
 
 export default Popup;

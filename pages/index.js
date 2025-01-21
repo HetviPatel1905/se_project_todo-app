@@ -28,7 +28,6 @@ const addTodoPopup = new PopupWithForm({
     const todo = generateTodo(values);
     todoCounter.updateTotal(true);
     todosList.append(todo);
-    newTodoValidator._resetValidator();
     addTodoPopup.close();
   },
 });
