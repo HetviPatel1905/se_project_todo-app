@@ -12,7 +12,7 @@ A to-do app helps you organize tasks, set deadlines, and stay on top of your day
 
 ## images
 
-- link for images = ![Alt text](./images/)
+- link for images = ![Images](./images/)
 
 ## Deployment
 
