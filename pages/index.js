@@ -20,14 +20,18 @@ const addTodoPopup = new PopupWithForm({
     const name = inputValues.name;
     const dateInput = inputValues.dateInput;
 
+    if (!dateInput) {
+      alert("please set a due date before creating the task.");
+      return;
+    }
+
     const date = new Date(dateInput);
     date.setMinutes(date.getMinutes() + date.getTimezoneOffset());
 
     const id = uuidv4();
     const values = { name, date, id };
-    const todo = generateTodo(values);
+    renderTodo(values);
     todoCounter.updateTotal(true);
-    todosList.append(todo);
     addTodoPopup.close();
   },
 });
@@ -60,12 +64,14 @@ const generateTodo = (data) => {
   return todoElement;
 };
 
+const renderTodo = (item) => {
+  const todo = generateTodo(item);
+  section.addItem(todo);
+};
+
 const section = new Section({
   items: initialTodos,
-  renderer: (item) => {
-    const todo = generateTodo(item);
-    section.addItem(todo);
-  },
+  renderer: renderTodo,
   containerSelector: ".todos__list",
 });
 
